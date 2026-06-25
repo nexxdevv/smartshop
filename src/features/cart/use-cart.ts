@@ -44,6 +44,8 @@ export function useCart() {
     );
   };
 
+  const clearCart = () => setItems([]);
+
   const total = useMemo(
     () => getTotal(items),
     [items]
@@ -55,5 +57,6 @@ export function useCart() {
     addToCart,
     removeFromCart,
     changeQuantity,
+    clearCart,
   };
 }

@@ -34,12 +34,12 @@ Call log:
         - /url: /dashboard
       - link "Cart" [ref=e7] [cursor=pointer]:
         - /url: /cart
-      - text: "0"
-  - main [ref=e8]:
-    - heading "Login required" [level=1] [ref=e9]
-  - button "Open Next.js Dev Tools" [ref=e15] [cursor=pointer]:
-    - img [ref=e16]
-  - alert [ref=e19]
+      - generic [ref=e8]: "0"
+  - main [ref=e9]:
+    - heading "Login required" [level=1] [ref=e10]
+  - button "Open Next.js Dev Tools" [ref=e16] [cursor=pointer]:
+    - img [ref=e17]
+  - alert [ref=e20]
 ```
 
 # Test source

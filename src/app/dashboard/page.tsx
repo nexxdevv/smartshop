@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useAuthContext } from "../../features/auth/auth-context";
 import { getOrders } from "../../features/orders/order-service";
 
@@ -10,6 +11,7 @@ export default function DashboardPage() {
     return (
       <main className="p-8">
         <h1>Please log in</h1>
+        <Link href="/login">Log in</Link>
       </main>
     );
   }

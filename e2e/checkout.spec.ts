@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("user can checkout after login", async ({ page }) => {
+test("checkout redirects to dashboard after success", async ({ page }) => {
   await page.goto("/login");
 
   await page.getByPlaceholder("email").fill("test@email.com");
@@ -12,7 +12,13 @@ test("user can checkout after login", async ({ page }) => {
 
   await page.goto("/checkout");
 
-  await expect(page.getByText(/total/i)).toBeVisible();
-
   await page.getByRole("button", { name: /place order/i }).click();
+
+  await expect(page).toHaveURL(/checkout\/success/);
+
+  await expect(
+    page.getByText(/order successful/i)
+  ).toBeVisible();
+
+  await expect(page).toHaveURL(/dashboard/);
 });

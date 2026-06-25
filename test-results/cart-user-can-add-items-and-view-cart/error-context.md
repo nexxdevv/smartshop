@@ -34,31 +34,31 @@ Call log:
         - /url: /dashboard
       - link "Cart" [ref=e7] [cursor=pointer]:
         - /url: /cart
-      - text: "0"
-  - main [ref=e8]:
-    - heading "SmartShop" [level=1] [ref=e9]
-    - generic [ref=e10]:
-      - article [ref=e11]:
-        - heading "iPhone 16" [level=2] [ref=e12]
-        - paragraph [ref=e13]: $999
-        - paragraph [ref=e14]: smartphone
-        - paragraph [ref=e15]: In Stock
-        - button "Add to Cart" [ref=e17]
-      - article [ref=e18]:
-        - heading "Galaxy S25" [level=2] [ref=e19]
-        - paragraph [ref=e20]: $899
-        - paragraph [ref=e21]: smartphone
-        - paragraph [ref=e22]: In Stock
-        - button "Add to Cart" [ref=e24]
-      - article [ref=e25]:
-        - heading "iPad Air" [level=2] [ref=e26]
-        - paragraph [ref=e27]: $699
-        - paragraph [ref=e28]: tablet
-        - paragraph [ref=e29]: In Stock
-        - button "Add to Cart" [ref=e31]
-  - button "Open Next.js Dev Tools" [ref=e37] [cursor=pointer]:
-    - img [ref=e38]
-  - alert [ref=e41]
+      - generic [ref=e8]: "0"
+  - main [ref=e9]:
+    - heading "SmartShop" [level=1] [ref=e10]
+    - generic [ref=e11]:
+      - article [ref=e12]:
+        - heading "iPhone 16" [level=2] [ref=e13]
+        - paragraph [ref=e14]: $999
+        - paragraph [ref=e15]: smartphone
+        - paragraph [ref=e16]: In Stock
+        - button "Add to Cart" [ref=e18]
+      - article [ref=e19]:
+        - heading "Galaxy S25" [level=2] [ref=e20]
+        - paragraph [ref=e21]: $899
+        - paragraph [ref=e22]: smartphone
+        - paragraph [ref=e23]: In Stock
+        - button "Add to Cart" [ref=e25]
+      - article [ref=e26]:
+        - heading "iPad Air" [level=2] [ref=e27]
+        - paragraph [ref=e28]: $699
+        - paragraph [ref=e29]: tablet
+        - paragraph [ref=e30]: In Stock
+        - button "Add to Cart" [ref=e32]
+  - button "Open Next.js Dev Tools" [ref=e38] [cursor=pointer]:
+    - img [ref=e39]
+  - alert [ref=e42]
 ```
 
 # Test source

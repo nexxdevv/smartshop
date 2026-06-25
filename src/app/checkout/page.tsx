@@ -1,12 +1,16 @@
 "use client";
 
+import { useRouter } from "next/navigation";
+
 import { useAuthContext } from "../../features/auth/auth-context";
 import { useCartContext } from "../../features/cart/cart-context";
 import { createOrder } from "../../features/orders/order-service";
 
 export default function CheckoutPage() {
+  const router = useRouter();
+
   const { user } = useAuthContext();
-  const { items, total } = useCartContext();
+  const { items, total, clearCart } = useCartContext();
 
   if (!user) {
     return (
@@ -18,6 +22,10 @@ export default function CheckoutPage() {
 
   const handleCheckout = () => {
     createOrder(user.email, items);
+
+    clearCart();
+
+    router.push("/checkout/success");
   };
 
   return (

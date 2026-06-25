@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useCartContext } from "../../features/cart/cart-context";
 
 export default function CartPage() {
@@ -60,6 +61,9 @@ export default function CartPage() {
       </div>
 
       <div className="mt-6 text-xl font-bold">Total: ${total}</div>
+      <Link  href="/checkout" className="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded">
+        Checkout
+      </Link>
     </main>
   );
 }
