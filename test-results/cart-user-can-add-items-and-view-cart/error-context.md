@@ -28,33 +28,31 @@ Call log:
 - generic [active] [ref=e1]:
   - navigation [ref=e2]:
     - generic [ref=e3]: SmartShop
-    - generic [ref=e4]:
-      - generic [ref=e5]: Cart
-      - generic [ref=e6]: "0"
-  - main [ref=e7]:
-    - heading "SmartShop" [level=1] [ref=e8]
-    - generic [ref=e9]:
-      - article [ref=e10]:
-        - heading "iPhone 16" [level=2] [ref=e11]
-        - paragraph [ref=e12]: $999
-        - paragraph [ref=e13]: smartphone
-        - paragraph [ref=e14]: In Stock
-        - button "Add to Cart" [ref=e16]
-      - article [ref=e17]:
-        - heading "Galaxy S25" [level=2] [ref=e18]
-        - paragraph [ref=e19]: $899
-        - paragraph [ref=e20]: smartphone
-        - paragraph [ref=e21]: In Stock
-        - button "Add to Cart" [ref=e23]
-      - article [ref=e24]:
-        - heading "iPad Air" [level=2] [ref=e25]
-        - paragraph [ref=e26]: $699
-        - paragraph [ref=e27]: tablet
-        - paragraph [ref=e28]: In Stock
-        - button "Add to Cart" [ref=e30]
-  - button "Open Next.js Dev Tools" [ref=e36] [cursor=pointer]:
-    - img [ref=e37]
-  - alert [ref=e40]
+    - generic [ref=e4]: Cart0
+  - main [ref=e5]:
+    - heading "SmartShop" [level=1] [ref=e6]
+    - generic [ref=e7]:
+      - article [ref=e8]:
+        - heading "iPhone 16" [level=2] [ref=e9]
+        - paragraph [ref=e10]: $999
+        - paragraph [ref=e11]: smartphone
+        - paragraph [ref=e12]: In Stock
+        - button "Add to Cart" [ref=e14]
+      - article [ref=e15]:
+        - heading "Galaxy S25" [level=2] [ref=e16]
+        - paragraph [ref=e17]: $899
+        - paragraph [ref=e18]: smartphone
+        - paragraph [ref=e19]: In Stock
+        - button "Add to Cart" [ref=e21]
+      - article [ref=e22]:
+        - heading "iPad Air" [level=2] [ref=e23]
+        - paragraph [ref=e24]: $699
+        - paragraph [ref=e25]: tablet
+        - paragraph [ref=e26]: In Stock
+        - button "Add to Cart" [ref=e28]
+  - button "Open Next.js Dev Tools" [ref=e34] [cursor=pointer]:
+    - img [ref=e35]
+  - alert [ref=e38]
 ```
 
 # Test source
