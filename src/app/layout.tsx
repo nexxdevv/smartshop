@@ -4,6 +4,7 @@ import "./globals.css";
 import {
   CartProvider,
 } from "../features/cart/cart-context";
+import { Navbar } from "../components/layout/navbar";
 
 export const metadata: Metadata = {
   title: "SmartShop",
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <CartProvider>
+          <Navbar />
           {children}
         </CartProvider>
       </body>
