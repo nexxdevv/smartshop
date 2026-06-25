@@ -26,7 +26,14 @@ Call log:
 ```
 
 ```yaml
-- navigation: SmartShop Cart0
+- navigation:
+  - link "SmartShop":
+    - /url: /
+  - link "Dashboard":
+    - /url: /dashboard
+  - link "Cart":
+    - /url: /cart
+  - text: "0"
 - main:
   - heading "Login required" [level=1]
 - alert

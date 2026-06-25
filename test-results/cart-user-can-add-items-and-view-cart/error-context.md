@@ -27,32 +27,38 @@ Call log:
 ```yaml
 - generic [active] [ref=e1]:
   - navigation [ref=e2]:
-    - generic [ref=e3]: SmartShop
-    - generic [ref=e4]: Cart0
-  - main [ref=e5]:
-    - heading "SmartShop" [level=1] [ref=e6]
-    - generic [ref=e7]:
-      - article [ref=e8]:
-        - heading "iPhone 16" [level=2] [ref=e9]
-        - paragraph [ref=e10]: $999
-        - paragraph [ref=e11]: smartphone
-        - paragraph [ref=e12]: In Stock
-        - button "Add to Cart" [ref=e14]
-      - article [ref=e15]:
-        - heading "Galaxy S25" [level=2] [ref=e16]
-        - paragraph [ref=e17]: $899
-        - paragraph [ref=e18]: smartphone
-        - paragraph [ref=e19]: In Stock
-        - button "Add to Cart" [ref=e21]
-      - article [ref=e22]:
-        - heading "iPad Air" [level=2] [ref=e23]
-        - paragraph [ref=e24]: $699
-        - paragraph [ref=e25]: tablet
-        - paragraph [ref=e26]: In Stock
-        - button "Add to Cart" [ref=e28]
-  - button "Open Next.js Dev Tools" [ref=e34] [cursor=pointer]:
-    - img [ref=e35]
-  - alert [ref=e38]
+    - link "SmartShop" [ref=e4] [cursor=pointer]:
+      - /url: /
+    - generic [ref=e5]:
+      - link "Dashboard" [ref=e6] [cursor=pointer]:
+        - /url: /dashboard
+      - link "Cart" [ref=e7] [cursor=pointer]:
+        - /url: /cart
+      - text: "0"
+  - main [ref=e8]:
+    - heading "SmartShop" [level=1] [ref=e9]
+    - generic [ref=e10]:
+      - article [ref=e11]:
+        - heading "iPhone 16" [level=2] [ref=e12]
+        - paragraph [ref=e13]: $999
+        - paragraph [ref=e14]: smartphone
+        - paragraph [ref=e15]: In Stock
+        - button "Add to Cart" [ref=e17]
+      - article [ref=e18]:
+        - heading "Galaxy S25" [level=2] [ref=e19]
+        - paragraph [ref=e20]: $899
+        - paragraph [ref=e21]: smartphone
+        - paragraph [ref=e22]: In Stock
+        - button "Add to Cart" [ref=e24]
+      - article [ref=e25]:
+        - heading "iPad Air" [level=2] [ref=e26]
+        - paragraph [ref=e27]: $699
+        - paragraph [ref=e28]: tablet
+        - paragraph [ref=e29]: In Stock
+        - button "Add to Cart" [ref=e31]
+  - button "Open Next.js Dev Tools" [ref=e37] [cursor=pointer]:
+    - img [ref=e38]
+  - alert [ref=e41]
 ```
 
 # Test source
