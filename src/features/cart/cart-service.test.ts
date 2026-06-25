@@ -81,3 +81,42 @@ describe("Cart Service", () => {
     expect(total).toBe(1998);
   });
 });
+
+it("returns 0 for an empty cart", () => {
+  expect(getTotal([])).toBe(0);
+});
+
+it("does not change other items when updating quantity", () => {
+  const tablet = {
+    ...phone,
+    id: "ipad-air",
+    name: "iPad Air",
+    category: "tablet" as const,
+  };
+
+  const cart = updateQuantity(
+    [
+      { product: phone, quantity: 1 },
+      { product: tablet, quantity: 1 },
+    ],
+    phone.id,
+    3
+  );
+
+  expect(cart[0].quantity).toBe(3);
+  expect(cart[1].quantity).toBe(1);
+});
+
+it("removing a missing item leaves cart unchanged", () => {
+  const cart = removeItem(
+    [
+      {
+        product: phone,
+        quantity: 1,
+      },
+    ],
+    "does-not-exist"
+  );
+
+  expect(cart).toHaveLength(1);
+});
