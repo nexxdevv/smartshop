@@ -11,6 +11,7 @@ export function AddToCartButton({
 }: Props) {
   return (
     <button
+      name="add-to-cart"
       onClick={() => onAddToCart(product)}
       className="rounded bg-black px-4 py-2 text-white"
     >

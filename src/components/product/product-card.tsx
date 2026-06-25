@@ -1,3 +1,5 @@
+"use client";
+
 import { Product } from "../../types/product";
 import { AddToCartButton } from "./add-to-cart-button";
 import { useCartContext } from "../../features/cart/cart-context";
