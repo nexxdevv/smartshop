@@ -1,3 +1,5 @@
+// src/features/cart/use-cart.test.tsx
+
 import { renderHook, act } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
 
@@ -14,7 +16,7 @@ const product = {
 };
 
 describe("useCart", () => {
-  it("adds items to the cart", () => {
+  it("adds items to cart", () => {
     const { result } = renderHook(() => useCart());
 
     act(() => {
@@ -23,4 +25,48 @@ describe("useCart", () => {
 
     expect(result.current.items).toHaveLength(1);
   });
+
+  it("calculates total", () => {
+    const { result } = renderHook(() => useCart());
+
+    act(() => {
+      result.current.addToCart(product);
+      result.current.addToCart(product);
+    });
+
+    expect(result.current.total).toBe(1998);
+  });
+});
+
+it("removes items from cart", () => {
+  const { result } = renderHook(() => useCart());
+
+  act(() => {
+    result.current.addToCart(product);
+  });
+
+  act(() => {
+    result.current.removeFromCart(product.id);
+  });
+
+  expect(result.current.items).toHaveLength(0);
+});
+
+it("updates quantity", () => {
+  const { result } = renderHook(() => useCart());
+
+  act(() => {
+    result.current.addToCart(product);
+  });
+
+  act(() => {
+    result.current.changeQuantity(
+      product.id,
+      5
+    );
+  });
+
+  expect(
+    result.current.items[0].quantity
+  ).toBe(5);
 });
